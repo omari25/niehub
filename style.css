@@ -83,15 +83,108 @@ nav{
 }
 
 .main-section{
-    padding: 120px 30px 30px;
+    padding: 100px 30px 30px;
     margin: 0 7vw;
 }
 
-/* .landing-div{
-} */
+.landing-div{
+    padding: 120px 9vw 30px;
+    height: 100vh;
+    background-image: linear-gradient(to right, #000000bc, #000000bc), url('./images/niehub-contact-us.jpeg');
+    background-size: cover;
+}
+
+.landing-div-headers{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3vw;
+    text-align: center;
+    height: 100%;
+}
+
+.landing-div-headers h1{
+    font-size: 80px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.landing-div-headers h2{
+    font-size: 20px;
+    color: #e2d700;
+}
+
+.landing-div-headers p{
+    font-size: 20px;
+    color: white;
+    width: 70%;
+}
+
+.landing-div-headers button{
+    width: 300px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(to right, #00a005, #cfa200);
+    color: white;
+    font-size: 18px;
+}
+
+.who-we-are-div{
+    width: 100%;
+}
+
+/* About us page */
+
+.about-us{
+    padding: 120px 9vw 30px;
+    background-color: #e5e5f7;
+    opacity: 1;
+    background: radial-gradient(circle, transparent 20%, #e5e5f7 20%, #e5e5f7 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #e5e5f7 20%, #e5e5f7 80%, transparent 80%, transparent) 12.5px 12.5px, linear-gradient(#009d17 1px, transparent 1px) 0 -0.5px, linear-gradient(90deg, #009d17 1px, #e5e5f7 1px) -0.5px 0;
+    background-size: 25px 25px, 25px 25px, 12.5px 12.5px, 12.5px 12.5px;
+}
+
+.about-us-team{
+    width: 100%;
+}
+
+.team-members{
+    width: 100%;
+    padding: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow:  inset 3px 3px 16px #005e00;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.team-members-image, .team-members-text{
+    width: 48%;
+}
+
+.team-members-image img{
+    width: 100%;
+    border-top-left-radius: 40%;
+    border-bottom-right-radius: 40%;
+}
+
+.team-members-text h1{
+    color: black;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.team-members-text p{
+    font-size: 18px;
+}
+
+/* Contact us page */
 
 .contact-page-top-inner-div{
-    margin: 4vw 0;
+    margin: 3vw 0;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -117,10 +210,10 @@ nav{
 }
 
 .contact-page-top-div-right-icons i{
-    color: #0b930b;
+    color: orange;
     font-size: 24px;
     padding: 24px;
-    background-color: #d8eed8;
+    background-color: #faff9b9e;
     border-radius: 50%;
     margin-right: 30px;
 }
@@ -150,7 +243,7 @@ footer{
 
 .footer-icons-div i{
     font-size: 24px;
-    color: #005e00;
+    color: orange;
 }
 
 @media (max-width: 700px) {
@@ -190,11 +283,15 @@ footer{
         display: flex;
         justify-content: space-around;
         flex-direction: column;
-        background-color: #acd5ac;
+        background: linear-gradient(to bottom right, #00a005, #cfa200);
         height: 90vh;
         top: 0;
         right: -100%;
         transition: 0.4s;
+    }
+
+    .nav-div-two a{
+        color: white;
     }
 
     .nav-div-two.active{
@@ -216,6 +313,22 @@ footer{
         width: 100%;
     }
 
+    .landing-div-headers p{
+        width: 100%;
+    }
+
+    .team-members{
+        flex-direction: column;
+    }
+
+    .team-members-image, .team-members-text{
+        width: 100%;
+    }
+
+    .team-members:nth-child(odd){
+        flex-flow: column-reverse;
+    }
+
     footer{
         /* padding: 0 9vw;
         width: 100%;
@@ -225,5 +338,45 @@ footer{
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
+        height: 150px;
+    }
+    .copyright-div{
+        text-align: center;
+    }
+
+    .footer-icons-div{
+        width: 30%;
+    }
+}
+
+@media (max-width: 500px) {
+    .landing-div-headers h1{
+        font-size: 50px;
+    }
+    .landing-div-headers{
+        padding: 0;
+    }
+
+    .team-members{
+        padding: 10px;
+        box-shadow: none;
+        border-radius: 0;
+    }
+}
+
+@media (max-width: 300px) {
+    .landing-div-headers button{
+        width: 100%;
+        font-size: 16px;
+    }
+    .landing-div-headers h1{
+        font-size: 30px;
+    }
+    .landing-div-headers h2{
+        font-size: 16px;
+    }
+
+    .landing-div-headers p{
+        font-size: 16px;
     }
 }
