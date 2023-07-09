@@ -1,12 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text&display=swap');
+
 * {
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Golos Text', sans-serif;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
-
-html {
-    scroll-behavior: smooth;
 }
 
 nav{
@@ -34,9 +32,9 @@ nav{
 }
 
 .nav-div-two{
-    width: 50%;
+    width: 70%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 .nav-div-two a{
@@ -46,9 +44,9 @@ nav{
     font-size: 20px;
 }
 
-/* .nav-div-two a:hover{
-    border: 2px dashed #005e00;
-} */
+.nav-div-two a:hover{
+    border: 3px dashed #FFC927;
+}
 
 .hamburger{
     position: fixed;
@@ -90,7 +88,7 @@ nav{
 .landing-div{
     padding: 120px 9vw 30px;
     height: 100vh;
-    background-image: linear-gradient(to right, #000000bc, #000000bc), url('./images/niehub-contact-us.jpeg');
+    background-image: linear-gradient(to right, #000000a8, #000000a8), url('./images/niehub-contact-us.jpeg');
     background-size: cover;
 }
 
@@ -126,62 +124,264 @@ nav{
     height: 50px;
     border: none;
     border-radius: 10px;
-    background: linear-gradient(to right, #00a005, #cfa200);
+    /* background: linear-gradient(to right, #00a005, #cfa200); */
+    background-color: #39A126;
     color: white;
     font-size: 18px;
 }
 
-.who-we-are-div{
+.home-page-initiatives{
+    padding: 50px 7vw;
+    width: 100%;
+    /* background-color: #623939; */
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.home-page-initiatives-div{
+    padding: 16px;
+    width: 24%;
+    border-radius: 10px;
+    height: 480px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.home-page-initiatives-div:nth-child(odd){
+    background-color: #feffeb;
+}
+
+.home-page-initiatives-div:nth-child(even){
+    background-color: #e9ffe5;
+}
+
+.home-page-initiatives-img-div{
+    width: 70%;
+    padding: 2vw;
+    border: 1px solid #57575746;
+    border-radius: 50%;
+}
+
+.home-page-initiatives-div h1{
+    text-align: center;
+    font-size: 24px;
+}
+.home-page-initiatives-div img{
     width: 100%;
 }
+.home-page-initiatives-div p{
+    width: 80%;
+    text-align: center;
+}
+
+.home-page-initiatives-div a{
+    background-color: #39A126;
+    width: 80%;
+    height: 50px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+
+}
+
+
+
+
+
+
+
+
+
 
 /* About us page */
 
-.about-us{
-    padding: 120px 9vw 30px;
-    background-color: #e5e5f7;
-    opacity: 1;
-    background: radial-gradient(circle, transparent 20%, #e5e5f7 20%, #e5e5f7 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #e5e5f7 20%, #e5e5f7 80%, transparent 80%, transparent) 12.5px 12.5px, linear-gradient(#009d17 1px, transparent 1px) 0 -0.5px, linear-gradient(90deg, #009d17 1px, #e5e5f7 1px) -0.5px 0;
-    background-size: 25px 25px, 25px 25px, 12.5px 12.5px, 12.5px 12.5px;
+.who-we-are{
+    padding: 120px 7vw 30px;
+    width: 100%;
+    background-size: cover;
+    background-color: #F1E9D7;
 }
 
+.about-niehub-header{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 48px;
+    color: #C97713;
+}
+
+.who-we-are-side-divs{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.who-we-are-story{
+    width: 48%;
+}
+
+.who-we-are-story p{
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.who-we-are-image{
+    width: 48%;
+}
+
+.who-we-are-image img{
+    width: 100%;
+}
+
+
+
+
+.vision-mission-wrapper{
+    padding: 7vw 6vw;
+    width: 100%;
+    /* height: 600px; */
+}
+
+.vision-mission-values{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+}
+.vision-mission-values > div{
+    padding: 20px 2vw ;
+    width: 30%;
+    margin-bottom: 40px;
+    border-radius: 16px;
+}
+
+.vision-mission-values > div h1{
+    color: #FFC927;
+    margin-bottom: 36px;
+    text-align: center;
+}
+
+.vision-mission-values > div p{
+    color: white;
+    font-size: 18px;
+}
+
+.vision{
+    background-image: linear-gradient(to right, #32522ee6, #32522ee6), url('./images/shared-vision.png');
+    background-size: cover;
+}
+
+.mission{
+    background-image: linear-gradient(to right, #32522ee6, #32522ee6), url('./images/target.png');
+    background-size: cover;
+}
+
+.values{
+    background-image: linear-gradient(to right, #32522ee6, #32522ee6), url('./images/value.png');
+    background-size: cover;
+    font-size: 20px;
+}
+
+.values ul {
+    color: white;
+    list-style: none;
+}
+
+.values ul li:before {
+    content: '✓ ';
+    color: #FFC927;
+    margin-left: 20px;
+    font-size: 30px;
+}
+.objectives-header{
+    text-align: center;
+    margin-bottom: 4px;
+    font-size: 48px;
+    color: #C97713;
+}
+
+
 .about-us-team{
+    padding: 50px 9vw;
+    background-image: linear-gradient(to right, #32522e8f, #32522e8f), url('./images/digital.jpg');
+    background-size: cover;
+}
+
+.about-us-team-members{
     width: 100%;
 }
 
 .team-members{
+    background-color: #ecffec;
     width: 100%;
-    padding: 30px;
-    margin-bottom: 30px;
+    padding: 40px 2vw;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    box-shadow:  inset 3px 3px 16px #005e00;
+    margin-bottom: 60px;
     border-radius: 20px;
-    background-color: white;
+    /* box-shadow: 6px 6px 60px #76e7af; */
 }
 
-.team-members-image, .team-members-text{
-    width: 48%;
+.team-members-image{
+    width: 25%;
 }
-
+.team-members-text{
+    width: 70%;
+    padding-right: 80px;
+}
 .team-members-image img{
     width: 100%;
-    border-top-left-radius: 40%;
-    border-bottom-right-radius: 40%;
+    border-radius: 50%;
 }
 
 .team-members-text h1{
-    color: black;
-    text-align: center;
     margin-bottom: 20px;
-}
+    text-align: center;
+} 
 
 .team-members-text p{
     font-size: 18px;
-}
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Contact us page */
+
+.contact-us{
+    padding: 120px 9vw 30px;
+    
+    /* background-color: #32522E;
+    background-color: #39A126;
+    background-color: #C97713;
+    background-color: #FFC927;
+    background-color: #F1E9D7; */
+
+
+}
+
+/* .contact-page-top-div{
+} */
 
 .contact-page-top-inner-div{
     margin: 3vw 0;
@@ -225,6 +425,20 @@ nav{
     height: 60vh;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer */
+
 footer{
     padding: 0 9vw;
     width: 100%;
@@ -246,12 +460,129 @@ footer{
     color: orange;
 }
 
-@media (max-width: 700px) {
 
-    .main-section{
-        padding-left: 0;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media Queries */
+
+@media (max-width: 1300px) {
+    .who-we-are-side-divs{
+        flex-direction: column;
+        flex-flow: column-reverse;
+    }
+    .who-we-are-image, .who-we-are-story{
+        width: 100%;
+    }
+    .who-we-are-image{
+        margin-bottom: 30px;
+    }
+
+    .team-members-text{
         padding-right: 0;
     }
+
+
+}
+
+@media (max-width: 1000px) {
+    .home-page-initiatives-div{
+        width: 48%;
+        margin-bottom: 24px;
+    }
+    .home-page-initiatives{
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .about-us-team{
+        padding: 40px 3vw;
+    }
+    .team-members-text p{
+        font-size: 16px;
+    }
+}
+
+
+
+
+
+
+
+@media (max-width: 800px) {
+    .about-niehub-header{
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+
+    .contact-page-top-inner-div{
+        display: flex;
+        flex-direction: column;
+    }
+    .contact-page-top-div-left{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .contact-page-top-div-right{
+        width: 100%;
+    }
+
+    .landing-div-headers p{
+        width: 100%;
+    }
+
+    .vision-mission-values{
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .vision-mission-values > div{
+        width: 100%;
+    }
+
+    .team-members{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team-members-image{
+        width: 70%;
+    }
+    .team-members-text{
+        width: 90%;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 150px;
+    }
+    .copyright-div{
+        text-align: center;
+    }
+
+    .footer-icons-div{
+        width: 30%;
+    }
+}
+
+
+@media (max-width: 700px) {
 
     .hamburger{
         display: flex;
@@ -261,6 +592,10 @@ footer{
 
     .hamburger.active .bar:nth-child(2){
         display: none;
+    }
+
+    .hamburger.active .bar{
+        background-color: white;
     }
 
     .hamburger.active .bar:nth-child(1){
@@ -283,7 +618,7 @@ footer{
         display: flex;
         justify-content: space-around;
         flex-direction: column;
-        background: linear-gradient(to bottom right, #00a005, #cfa200);
+        background-color: #32522E;
         height: 90vh;
         top: 0;
         right: -100%;
@@ -300,71 +635,26 @@ footer{
     }
 }
 
-@media (max-width: 800px) {
-    .contact-page-top-inner-div{
-        display: flex;
-        flex-direction: column;
-    }
-    .contact-page-top-div-left{
-        width: 100%;
-        margin-bottom: 50px;
-    }
-    .contact-page-top-div-right{
-        width: 100%;
-    }
 
-    .landing-div-headers p{
-        width: 100%;
-    }
-
-    .team-members{
-        flex-direction: column;
-    }
-
-    .team-members-image, .team-members-text{
-        width: 100%;
-    }
-
-    .team-members:nth-child(odd){
-        flex-flow: column-reverse;
-    }
-
-    footer{
-        /* padding: 0 9vw;
-        width: 100%;
-        height: 80px;
-        border-top: 1px solid #d8d8d8; */
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-        height: 150px;
-    }
-    .copyright-div{
-        text-align: center;
-    }
-
-    .footer-icons-div{
-        width: 30%;
-    }
-}
-
-@media (max-width: 500px) {
+@media (max-width: 610px) {
     .landing-div-headers h1{
         font-size: 50px;
     }
     .landing-div-headers{
         padding: 0;
     }
-
-    .team-members{
-        padding: 10px;
-        box-shadow: none;
-        border-radius: 0;
+    .home-page-initiatives-div{
+        width: 100%;
+        margin-bottom: 24px;
+        height: 500px;
+    }
+    .home-page-initiatives{
+        justify-content: space-between;
+        flex-wrap: wrap;
     }
 }
 
-@media (max-width: 300px) {
+@media (max-width: 325px) {
     .landing-div-headers button{
         width: 100%;
         font-size: 16px;
