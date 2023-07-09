@@ -40,14 +40,12 @@ nav{
 .nav-div-two a{
     padding: 6px 12px;
     text-decoration: none;
-    color: #0b930b;
+    color: #39A126;
     font-size: 20px;
-    border-radius: 3px;
-
 }
 
 .nav-div-two a:hover{
-    background-color: #F1E9D7;
+    outline: 3px dashed #39A126;
 }
 
 .hamburger{
@@ -126,7 +124,6 @@ nav{
     height: 50px;
     border: none;
     border-radius: 10px;
-    /* background: linear-gradient(to right, #00a005, #cfa200); */
     background-color: #39A126;
     color: white;
     font-size: 18px;
@@ -135,7 +132,6 @@ nav{
 .home-page-initiatives{
     padding: 50px 7vw;
     width: 100%;
-    /* background-color: #623939; */
     display: flex;
     justify-content: space-between;
     align-items: stretch;
