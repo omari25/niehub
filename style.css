@@ -123,7 +123,6 @@ nav{
     width: 300px;
     height: 50px;
     border: none;
-    border-radius: 10px;
     background-color: #39A126;
     color: white;
     font-size: 18px;
@@ -187,6 +186,92 @@ nav{
     text-decoration: none;
 
 }
+
+
+
+
+
+
+
+
+
+/* Programs  */
+
+.courses-top-div{
+    padding: 120px 30px 30px;
+    height: 300px;
+    background-image: linear-gradient(to right, #000000a8, #000000a8), url('./images/courses.jpg');
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.courses-top-div h1{
+    color: #FFC927;
+    font-size: 40px;
+}
+
+.courses-top-div p{
+    color: white;
+}
+
+.courses-div{
+    padding: 60px 7vw 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.one-course-div{
+    background-color: #e9ffe5;
+    width: 30%;
+    margin-bottom: 60px;
+}
+
+.one-course-div-img img{
+    width: 100%;
+}
+
+.one-course-div-text{
+    padding: 20px;
+}
+
+.one-course-div-text h1, .one-course-div-text p{
+    margin-bottom: 20px;
+}
+
+.one-course-div-text h1{
+    color: #C97713;
+    font-size: 2vw;
+}
+
+.one-course-div-text-a{
+    display: flex;
+    justify-content: space-between;
+}
+
+.one-course-div-text a{
+    padding: 12px 30px;
+    outline: 2px solid #39A126;
+    border-radius: 5px;
+    background-color: #d6ffce;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+}
+
+.one-course-div-text a:hover{
+    background-color: #39A126;
+    color: white;
+    transition: .3s ease-in-out;
+}
+
+
+
+
+
 
 
 
@@ -378,9 +463,6 @@ nav{
 
 }
 
-/* .contact-page-top-div{
-} */
-
 .contact-page-top-inner-div{
     margin: 3vw 0;
     width: 100%;
@@ -494,6 +576,10 @@ footer{
         padding-right: 0;
     }
 
+    .one-course-div{
+        width: 48%;
+    }
+
 
 }
 
@@ -521,6 +607,13 @@ footer{
 
 
 @media (max-width: 800px) {
+    .one-course-div{
+        width: 100%;
+    }
+    .one-course-div-text h1{
+        font-size: 24px;
+    }
+
     .about-niehub-header{
         font-size: 28px;
         margin-bottom: 10px;
@@ -649,6 +742,16 @@ footer{
     .home-page-initiatives{
         justify-content: space-between;
         flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 400px) {
+    .one-course-div-text-a{
+        flex-direction: column;
+    }
+
+    .one-course-div-text a{
+        margin-bottom: 20px;
     }
 }
 
