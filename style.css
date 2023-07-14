@@ -119,13 +119,14 @@ nav{
     width: 70%;
 }
 
-.landing-div-headers button{
+.landing-div-headers a{
     width: 300px;
-    height: 50px;
+    padding: 16px 0;
     border: none;
     background-color: #39A126;
     color: white;
     font-size: 18px;
+    text-decoration: none;
 }
 
 .home-page-initiatives{
@@ -184,7 +185,6 @@ nav{
     justify-content: center;
     color: white;
     text-decoration: none;
-
 }
 
 
@@ -201,6 +201,7 @@ nav{
     padding: 120px 30px 30px;
     height: 300px;
     background-image: linear-gradient(to right, #000000a8, #000000a8), url('./images/courses.jpg');
+    background-size: cover;
     text-align: center;
     display: flex;
     align-items: center;
@@ -274,7 +275,17 @@ nav{
 
 .course-wrapper{
     width: 100%;
-    padding: 120px 9vw 30px;
+    padding: 100px 9vw 30px;
+}
+
+.course-wrapper-header-div{
+    margin-bottom: 40px;
+}
+
+.course-wrapper-header-div-h1{
+    font-size: 36px;
+    color: #C97713;
+
 }
 
 .course-walkthrough{
@@ -282,7 +293,7 @@ nav{
     justify-content: space-between;
 }
 .courses-left-div{
-    width: 68%;
+    width: 65%;
 }
 
 .courses-left-div .tabs{
@@ -293,7 +304,7 @@ nav{
 }
 
 .tabs .tab{
-    padding: 20px 30px;
+    padding: 16px 30px;
     font-size: 18px;
     font-weight: bold;
     cursor: pointer;
@@ -302,16 +313,8 @@ nav{
 .tabs .tab.active{
     border-bottom: 3px solid #39A126;
     color: #39A126;
+    background-color: #f2fff0;
 }
-
-
-/* .tab:hover {
-    background-color: #072044;
-} */
-
-/* .opened-tab{
-    padding: 5px;
-} */
 
 .tabcontent {
     display: none;
@@ -335,7 +338,7 @@ nav{
 .what-youll-learn i{
     margin: 0 16px;
     font-size: 24px;
-    color: #FFC927;
+    color: #39A126;
 }
 
 .what-youll-learn p{
@@ -349,12 +352,16 @@ nav{
 
 
 .course-right-div{
-    width: 28%;
+    width: 350px;
     box-shadow: 0px 0px 50px 43px #c2c2c238;
     height: 700px;
+    padding: 24px;
 }
 
-
+.course-details > div{
+    border-bottom: 1px solid #cbcbcb;
+    padding: 24px 0;
+}
 
 
 
@@ -658,7 +665,18 @@ footer{
         width: 48%;
     }
 
+    .course-walkthrough{
+        flex-direction: column;
+        align-items: center;
+    }
 
+    .courses-left-div{
+        width: 100%;
+    }
+
+    .course-right-div{
+        width: 60%;
+    }
 }
 
 @media (max-width: 1000px) {
@@ -685,6 +703,14 @@ footer{
 
 
 @media (max-width: 800px) {
+    .course-wrapper-header-div{
+        margin-bottom: 20px;
+    }
+    
+    .course-wrapper-header-div h1{
+        font-size: 24px;
+    }
+
     .one-course-div{
         width: 100%;
     }
@@ -802,6 +828,9 @@ footer{
         position: fixed;
         right: 0;
     }
+    .course-right-div{
+        width: 100%;
+    }
 }
 
 
@@ -834,7 +863,10 @@ footer{
 }
 
 @media (max-width: 350px) {
-    .landing-div-headers button{
+    .tabs .tab{
+        padding: 10px 4px;
+    }
+    .landing-div-headers a{
         width: 100%;
         font-size: 16px;
     }
