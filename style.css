@@ -291,6 +291,7 @@ nav{
 .course-walkthrough{
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
 }
 .courses-left-div{
     width: 65%;
@@ -354,13 +355,24 @@ nav{
 .course-right-div{
     width: 350px;
     box-shadow: 0px 0px 50px 43px #c2c2c238;
-    height: 700px;
-    padding: 24px;
+    padding: 50px 24px;
+    border-radius: 16px;
 }
 
 .course-details > div{
-    border-bottom: 1px solid #cbcbcb;
+    border-bottom: 1px solid #dfdfdf;
     padding: 24px 0;
+}
+
+.course-details a{
+    display: block;
+    width: 80%;
+    text-align: center;
+    padding: 20px 0;
+    background-color: #39A126;
+    margin: auto;
+    color: white;
+    text-decoration: none;
 }
 
 
