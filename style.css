@@ -226,7 +226,7 @@ nav{
     width: 100%;
 }
 .one-course-div{
-    background-color: #e9ffe5;
+    background-color: #efffec;
     width: 30%;
     margin-bottom: 60px;
 }
@@ -425,7 +425,7 @@ nav{
 
 
 .vision-mission-wrapper{
-    padding: 7vw 6vw;
+    padding: 7vw 6vw 0;
     width: 100%;
     /* height: 600px; */
 }
@@ -488,6 +488,21 @@ nav{
     color: #C97713;
 }
 
+.objectives-content{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.objectives-content > div{
+    display: flex;
+    align-items: center;
+    margin: 40px 0;
+}
+
+.objectives-content > div i{
+    margin-right: 30px;
+    color: #C97713;
+}
 
 .about-us-team{
     padding: 50px 9vw;
@@ -915,6 +930,10 @@ footer{
 @media (max-width: 400px) {
     .one-course-div-text-a{
         flex-direction: column;
+    }
+
+    .objectives-content{
+        width: 100%;
     }
 
     .one-course-div-text a{
